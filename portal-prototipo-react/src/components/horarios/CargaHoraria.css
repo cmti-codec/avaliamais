@@ -1,0 +1,98 @@
+/* src/components/horarios/CargaHoraria.css */
+
+.carga-horaria-container table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.carga-horaria-container th, .carga-horaria-container td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #dee2e6;
+}
+
+.carga-horaria-container th {
+    background-color: #f8f9fa;
+}
+
+.carga-horaria-container input {
+    width: 100px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 1rem;
+}
+/* Adicionar no final de CargaHoraria.css */
+.carga-horaria-container .calculated-value {
+  font-weight: 500;
+  color: #333;
+  text-align: center;
+}
+
+.carga-horaria-container .calculated-value.total {
+  font-weight: bold;
+  color: #0056b3; /* Cor primária do tema */
+}
+
+.carga-horaria-container th {
+  text-align: center;
+}
+
+.carga-horaria-container th:first-child,
+.carga-horaria-container td:first-child {
+  text-align: left;
+}
+.carga-horaria-container .pl-select {
+  width: 100px; /* Mesmo tamanho do input */
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+  background-color: #f8f9fa;
+  cursor: pointer;
+}
+
+.carga-horaria-container .pl-select:disabled {
+  background-color: #e9ecef;
+  cursor: not-allowed;
+}
+
+.carga-horaria-container td {
+  text-align: center; /* Centraliza todas as células por padrão */
+  vertical-align: middle; /* Alinha verticalmente ao meio */
+}
+
+.carga-horaria-container td:first-child {
+  text-align: left; /* Mantém a primeira célula (nome do professor) alinhada à esquerda */
+}
+
+.carga-horaria-container input, .carga-horaria-container .pl-select {
+  text-align: center; /* Centraliza o texto dentro dos inputs e selects */
+}
+
+.actions-footer {
+  margin-top: 20px;
+  padding-top: 20px;
+  border-top: 1px solid #dee2e6;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+.btn-salvar {
+  background-color: #28a745;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  font-weight: bold;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.feedback-message {
+  color: #28a745;
+  font-weight: bold;
+}

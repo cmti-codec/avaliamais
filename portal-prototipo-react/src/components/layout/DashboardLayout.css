@@ -1,0 +1,21 @@
+/* src/components/layout/DashboardLayout.css */
+
+/*
+ * Correção: Alterado de '.dashboard-layout-container' para '.dashboard-container'
+ * para corresponder exatamente ao nome da classe no arquivo JSX.
+ */
+.dashboard-container {
+  display: flex;
+}
+
+/*
+ * O restante do código permanece o mesmo. Ele vai funcionar corretamente
+ * agora que o elemento pai tem o 'display: flex' aplicado.
+ */
+.dashboard-main-content {
+  flex: 1; 
+  padding: 30px;
+  background-color: #f4f7fa;
+  max-height: 100vh;
+  overflow-y: auto;
+}

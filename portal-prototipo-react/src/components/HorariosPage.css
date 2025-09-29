@@ -1,0 +1,99 @@
+/* src/components/HorariosPage.css */
+
+.horarios-header {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 30px;
+}
+
+.horarios-header h1 {
+  font-size: 2rem;
+  color: #2c3e50;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 0;
+}
+
+.header-badge {
+  background-color: #e2e8f0;
+  color: #2c3e50;
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.card {
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  padding: 25px;
+  margin-bottom: 20px;
+}
+
+.card h2 {
+  margin-top: 0;
+  margin-bottom: 8px;
+}
+
+.muted {
+  color: #6c757d;
+  font-size: 0.9rem;
+  margin-bottom: 20px;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.field label {
+  font-size: 0.9rem;
+  color: #6c757d;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.field select {
+  border: 1px solid #dee2e6;
+  border-radius: 10px;
+  padding: 12px;
+  background: #fff;
+  font-size: 1rem;
+  color: #212529;
+}
+.module-nav {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.module-nav button {
+  padding: 10px 20px;
+  border: 1px solid #dee2e6; /* Borda sutil */
+  background-color: #fff;   /* Fundo branco */
+  cursor: pointer;
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: #495057;           /* Texto um pouco mais escuro */
+  border-radius: 8px;      /* Cantos arredondados */
+  transition: all 0.2s;
+}
+
+.module-nav button:hover:not(.active) {
+  background-color: #e9ecef;
+  border-color: #adb5bd;
+}
+
+.module-nav button.active {
+  background-color: #0056b3; /* Cor primária do nosso tema */
+  color: #fff;
+  border-color: #0056b3;
+  font-weight: bold;
+  box-shadow: 0 2px 5px rgba(0, 86, 179, 0.2);
+}

@@ -1,0 +1,32 @@
+/* src/components/layout/Sidebar.css */
+.sidebar {
+  width: 260px;
+  background-color: #0056b3;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Garante que a sidebar ocupe no mínimo 100% da altura da tela */
+}
+.sidebar-header {
+  padding: 20px; text-align: center; border-bottom: 1px solid #004a99;
+}
+.sidebar-nav ul { list-style: none; padding: 20px 0; margin: 0; }
+.sidebar-nav li { padding: 0 20px; }
+.sidebar-nav a {
+  color: #fff; text-decoration: none; font-size: 1rem; display: flex; align-items: center;
+  transition: background-color 0.3s; padding: 10px; border-radius: 8px; margin-bottom: 5px;
+}
+.sidebar-nav a i { margin-right: 15px; font-size: 1.4rem; }
+.sidebar-nav li.active a, .sidebar-nav a:hover { background-color: #004a99; }
+.sidebar-school-name {
+  display: block;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 8px 12px;
+  border-radius: 8px;
+  font-size: 0.85rem;
+  margin: 10px 20px 0 20px;
+  text-align: center;
+  font-weight: 500;
+  white-space: normal;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}

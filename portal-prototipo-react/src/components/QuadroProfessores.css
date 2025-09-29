@@ -1,0 +1,60 @@
+/* src/components/QuadroProfessores.css */
+.quadro-professores-card {
+  background-color: #fff;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  grid-column: span 2;
+}
+.quadro-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.quadro-header h3 { margin: 0; font-size: 1.2rem; color: #333; }
+.quadro-header .ver-detalhes { text-decoration: none; color: #0056b3; font-weight: bold; }
+.quadro-tabela-container table { width: 100%; border-collapse: collapse; }
+.quadro-tabela-container th, .quadro-tabela-container td { padding: 12px 8px; text-align: left; border-bottom: 1px solid #f0f0f0; }
+.quadro-tabela-container th { color: #7f8c8d; font-size: 0.9rem; font-weight: normal; }
+.docente-info { display: flex; align-items: center; gap: 10px; }
+.docente-info img { width: 40px; height: 40px; border-radius: 50%; }
+.docente-info strong { display: block; color: #333; }
+.status-pill { padding: 5px 10px; border-radius: 15px; font-size: 0.8rem; font-weight: bold; color: #fff; }
+.status-ruim { background-color: #e74c3c; }
+.status-regular { background-color: #f39c12; }
+.status-ótimo { background-color: #2ecc71; }
+.status-default { background-color: #ccc; }
+.pagination-controls {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding-top: 15px;
+  margin-top: 15px;
+  border-top: 1px solid #f0f0f0;
+  gap: 15px;
+}
+
+.pagination-controls span {
+  font-size: 0.9rem;
+  color: #7f8c8d;
+}
+
+.pagination-controls button {
+  background-color: transparent;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  padding: 6px 12px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.2s;
+}
+
+.pagination-controls button:hover:not(:disabled) {
+  background-color: #f0f0f0;
+}
+
+.pagination-controls button:disabled {
+  cursor: not-allowed;
+  opacity: 0.5;
+}
